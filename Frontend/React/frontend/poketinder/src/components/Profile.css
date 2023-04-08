@@ -1,0 +1,547 @@
+@font-face {
+    font-family: "Pokemon";
+    src: url("./fonts/Pokemon.ttf") format("truetype");
+  }
+  
+  @font-face {
+    font-family: "PokemonSolid";
+    src: url("./fonts/PokemonSolid.ttf") format("truetype");
+  }
+  
+  @font-face {
+    font-family: "BobaCup";
+    src: url("./fonts/BobaCups.ttf") format("truetype");
+  }
+
+.background_color_container{
+    padding: 0;
+    margin: 0;
+    height:738px;
+    background: #A770EF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FDB99B, #CF8BF3, #A770EF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FDB99B, #CF8BF3, #A770EF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+
+
+.Left-Bar {
+   background: #f7ff00;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #db36a4, #f7ff00);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #db36a4, #f7ff00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
+
+/* Poke tinder logo */
+.App .PokeTinderLogo{
+    top:-1px !important;
+   }
+   
+   /* Strong Tag */
+   .App .PokeTinderLogo strong{
+    position:relative;
+    top:-8px;
+   }
+   
+   
+
+
+
+/* Image */
+.App .Left-Bar img{
+ padding-right:7px;
+ display:inline-block;
+ transform: rotateZ(86deg);
+ width:96px;
+}
+
+/* Left  bar */
+.App .Left-Bar{
+ height:73px;
+ position:relative;
+ left:-200px;
+ top:320px;
+}
+
+/* Image */
+.App img{
+ display:inline-block;
+ transform:translatex(379px) translatey(69px);
+}
+
+/* Image */
+.App div img{
+ padding-right:3px;
+ width:70px;
+ transform:translatex(218px) translatey(340px);
+}
+
+/* Left  bar */
+.App div .Left-Bar{
+ transform:translatex(203px) translatey(-271px);
+ width:215px;
+ min-height:637px;
+ box-shadow:4px 7px 48px -19px #000000;
+ border-top-left-radius:5px;
+ border-top-right-radius:5px;
+ border-bottom-right-radius:5px;
+ border-bottom-left-radius:5px;
+}
+
+/* Pikachu img */
+.App div .pikachu-img{
+ transform:translatex(55px) translatey(-71px);
+ width:86px;
+}
+
+/* Pokemon icon img */
+.App div .pokemonIcon-img{
+ transform:translatex(96px) translatey(-54px);
+ box-shadow:none;
+}
+
+
+/* Left  bar */
+.App div .Left-Bar{
+ transform:translatex(213px) translatey(-271px);
+ min-height:585px;
+ height:585px;
+ top:376px;
+}
+
+/* Pikachu img */
+.App div .pikachu-img{
+ transform:translatex(75px) translatey(-69px);
+ position:relative;
+ top:60px;
+ left:3px;
+}
+
+/* Pokemon icon img */
+.App div .pokemonIcon-img{
+ transform:translatex(104px) translatey(-54px);
+ position:relative;
+ top:60px;
+}
+
+.PokeTinderLogo{
+    font-family: "Pokemon";
+    margin: 0;
+    user-select: none;
+    color: #61077a;
+    background-color: #fffcfc;
+    font-size: 35px;
+    font-weight: bold;
+    align-items: center;
+    margin-bottom: 10px;
+    
+}
+
+/* Left  bar */
+.App div .Left-Bar{
+ transform:translatex(214px) translatey(-369px);
+ min-height:585px;
+ height:585px;
+ top:376px;
+ width:220px;
+}
+
+/* Pikachu img */
+.App div .pikachu-img{
+ transform:translatex(75px) translatey(-69px);
+ position:relative;
+ top:-71px;
+ left:1px;
+}
+
+/* Pokemon icon img */
+.App div .pokemonIcon-img{
+ transform:translatex(104px) translatey(-54px);
+ position:relative;
+ top:-57px;
+ left:3px;
+}
+
+/* Division */
+.App div .PokeTinderLogo{
+ width:218px;
+ transform:translatex(13px) translatey(0px);
+ border-bottom-left-radius:26px;
+ border-bottom-right-radius:26px;
+ position:relative;
+ top:-28px;
+}
+
+/* Strong Tag */
+.App div strong{
+ display:inline-block;
+ transform:translatex(19px) translatey(0px);
+}
+
+.glow-on-hover {
+    width: 220px;
+    height: 50px;
+    font-family: 'BobaCup';
+    border: none;
+    outline: none;
+    color: black;
+    font-size: 23px;
+    background: #f7ff00;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #db36a4, #f7ff00);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #db36a4, #f7ff00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.4);
+}
+
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: white;
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+   
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+
+
+/* Poke tinder logo */
+.App div .PokeTinderLogo{
+    top:-10px;
+   }
+   
+   /* Pikachu img */
+   .App div .pikachu-img{
+    top:-186px;
+    transform:translatex(-423px) translatey(-20px);
+   }
+   
+   /* Pokemon icon img */
+   .App div .pokemonIcon-img{
+    top:-132px;
+    transform:translatex(-387px) translatey(-27px);
+   }
+
+   
+   /* Pokemon tab */
+   .App div .PokemonTab{
+    position:relative;
+    top:-71px;
+    left:56px;
+    transform:translatex(-22px) translatey(-469px);
+    width:165px;
+   }
+   
+   /* Strong Tag */
+   .App .PokemonTab strong{
+    min-height:41px;
+    transform:translatex(25px) translatey(-445px);
+   }
+   
+   /* Strong Tag */
+   .App .CardTab strong{
+    margin-right:29px;
+    position:relative;
+    top:-93px;
+    min-height:32px;
+    width:62px;
+    transform:translatex(81px) translatey(-377px);
+   }
+   
+   /* Strong Tag */
+   .App .StatsTab strong{
+    width:57px;
+    min-height:33px;
+    transform:translatex(81px) translatey(-412px);
+   }
+   
+   /* Strong Tag */
+   .App > div > strong{
+    min-height:29px;
+    transform:translatex(81px) translatey(-491px);
+   }
+   
+   /* Card tab */
+   .App div .CardTab{
+    transform:translatex(-131px) translatey(-446px);
+    width:168px;
+   }
+   
+   /* Stats tab */
+   .App div .StatsTab{
+    transform:translatex(-295px) translatey(-352px);
+    width:166px;
+   }
+
+    .StoryPaper{
+        position: inherit;
+    background-image: url("./profile/paper.png");
+    
+   }
+   
+   /* Story paper */
+.App .StoryPaper{
+    position: absolute;
+    transform: rotateZ(2deg) translatex(274px) translatey(-128px);
+    height:418px;
+    width:550px;
+   }
+
+.StoryPaper .Story textarea{
+    position: absolute;
+    background: none;
+  border: none;
+  outline: none;
+  position:absolute;
+ top:42px;
+ min-height:312px;
+ visibility:visible;
+ font-size: 30px;
+}
+
+
+/* Story paper */
+.App .StoryPaper{
+ transform: rotateZ(2deg) translatex(274px) translatey(-128px);
+ height:418px;
+ width:550px;
+ left:146px;
+}
+
+/* Story */
+.PokemonTab .StoryPaper .Story{
+ transform: rotateZ(-3deg);
+ position: absolute;
+}
+
+/* Input */
+.StoryPaper .Story input[type=text]{
+ left:65px;
+ width:434px;
+ transform:translatex(0px) translatey(0px);
+ min-height:308px;
+}
+
+/* Story paper */
+.App .StoryPaper{
+ top:166px;
+}
+
+/* Text Area */
+.StoryPaper .Story textarea{
+ position:relative;
+ top:58px;
+ left:54px;
+ width:446px;
+ transform: rotateZ(-3deg);
+}
+
+.cardgrass{
+    background-image: url("./cards/grass.png");
+    background-repeat: no-repeat;
+}
+.cardcolorless{
+    background-image: url("./cards/colorless.png");
+    background-repeat: no-repeat;
+}
+.carddark{
+    background-image: url("./cards/dark.png");
+    background-repeat: no-repeat;
+}
+.cardfairy{
+    background-image: url("./cards/fairy.png");
+    background-repeat: no-repeat;
+}
+.cardfighting{
+    background-image: url("./cards/fighting.png");
+    background-repeat: no-repeat;
+}
+.cardfire{
+    background-image: url("./cards/fire.png");
+    background-repeat: no-repeat;
+}
+.cardmetal{
+    background-image: url("./cards/metal.png");
+    background-repeat: no-repeat;
+}
+.cardpsychic{
+    background-image: url("./cards/Psychic.png");
+    background-repeat: no-repeat;
+}
+.cardwater{
+    background-image: url("./colorless.png");
+    background-repeat: no-repeat;
+}
+.carddragon{
+    background-image: url("./cards/dragon.png");
+    background-repeat: no-repeat; 
+}
+.cardlightning{
+    background-image: url("./cards/lightning.png");
+    background-repeat: no-repeat;
+}
+.cardwater{
+    background-image: url("./cards/water.png");
+    background-repeat: no-repeat;
+}
+
+/* Save */
+.App .Save{
+    transform:translatex(1187px) translatey(18px);
+   }
+   
+   /* Pikachu img */
+   .App .pikachu-img{
+    left:165px !important;
+   }
+   
+   /* Pokemon icon img */
+   .App .pokemonIcon-img{
+    left:171px !important;
+   }
+   
+
+/* Pokemon card  chosen */
+.App .PokemonCard_Chosen{
+    left:309px;
+    top:111px;
+    transform:translatex(1187px) translatey(-28px);
+   }
+
+
+/* Save */
+.App .Save{
+    transform:translatex(1187px) translatey(18px);
+   }
+   
+   /* Pikachu img */
+   .App .pikachu-img{
+    left:165px !important;
+   }
+   
+   /* Pokemon icon img */
+   .App .pokemonIcon-img{
+    left:171px !important;
+   }
+   
+   /* Button */
+   .App .dropdown .dropdown-toggle{
+    transform:translatex(1034px) translatey(121px);
+    visibility:visible;
+    margin-left:36px;
+    position:fixed;
+   }
+
+   .btn2{
+    position: absolute;
+   }
+   
+   /* Btn1 */
+   .App .background_color_container > .btn1{
+    left:-99px;
+   }
+   
+   /* Button */
+   .background_color_container .btn2 .dropdown-toggle{
+    left:137px;
+   }
+   
+   /* Button */
+.background_color_container .btn2 .dropdown-toggle{
+    left:-85px;
+   }
+   
+   /* Btn2 */
+.App .btn2{
+    left:400px;
+    top:136px;
+    transform:translatex(565px) translatey(-15px);
+   }
+   /* Btn2 */
+.App .btn2{
+    width:12%;
+   }
+   
+
+.App .background_color_container > .btn1{
+    position:relative;
+    top:0px;
+    left:148px;
+   }
+   
+   
+
+
+
+
+
+
+/* Selected pokemon */
+.App .SelectedPokemon{
+    position:relative;
+    top:-45px;
+    left:-111px;
+    width:100%;
+    min-width:0px;
+    height:0px;
+   }
+   
+   /* Image */
+   .SelectedPokemon .PokemonImgSelected img{
+    transform:translatex(1831px) translatey(-227px);
+    min-height:177px;
+    width:231px;
+    margin-right:21px;
+    padding-right:22px;
+    left:41px;
+   }
+   
+   /* Pokemon img Unknowned */
+   .App .SelectedPokemon .PokemonImgSelected{
+    position:relative;
+    top:400px;
+    left:-200px;
+   }
+   
+   

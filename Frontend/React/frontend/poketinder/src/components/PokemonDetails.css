@@ -1,0 +1,609 @@
+@font-face {
+  font-family: "Pokemon";
+  src: url("./fonts/Pokemon.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "PokemonSolid";
+  src: url("./fonts/PokemonSolid.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "BobaCup";
+  src: url("./fonts/BobaCups.ttf") format("truetype");
+}
+
+.PokemonDetails-Container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+
+.PokemonDetails-Container .navBar{
+  position: fixed;
+  font-family: 'Pokemon';
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 97%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: pink;
+  height: 60px;
+  padding: 0 20px;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.8);
+  
+  
+}
+
+
+.PokemonDetails-Container .navBar h1{
+  font-family: "Pokemon";
+    margin: 0;
+    user-select: none;
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+
+.PokemonDetails{
+  font-family: 'BobaCup';
+  display: flex;
+  flex-direction: row;
+  border-radius: 10px;
+  padding-top: 5px;
+  padding-bottom: 100px;
+  padding-left: 30px;
+  align-items: center;
+
+
+  width: 1300px;
+  
+  transform: scale(0.97);
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.8);
+  margin-top: 100px;
+}
+
+.Bio p{
+  display: flex;
+  flex-direction: row;
+}
+
+.typegrassPokemonDetails {
+  background: #DCE35B;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #45B649, #DCE35B);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #45B649, #DCE35B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  
+}
+
+.typepoisonPokemonDetails {
+  background: #DCE35B;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #45B649, #DCE35B);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #45B649, #DCE35B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.typefirePokemonDetails {
+  background: #FDC830;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #F37335, #FDC830);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #F37335, #FDC830); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.typeflyingPokemonDetails {
+  background: #CC95C0;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #7AA1D2, #DBD4B4, #CC95C0);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #7AA1D2, #DBD4B4, #CC95C0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.typewaterPokemonDetails {
+  background: #77A1D3;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #E684AE, #79CBCA, #77A1D3);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #E684AE, #79CBCA, #77A1D3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
+
+.typebugPokemonDetails {
+  background: #DCE35B;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #45B649, #DCE35B);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #45B649, #DCE35B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.typenormalPokemonDetails {
+  background: #CC95C0;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #7AA1D2, #DBD4B4, #CC95C0);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #7AA1D2, #DBD4B4, #CC95C0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+}
+
+.typeelectricPokemonDetails {
+  background: #fffc00;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #ffffff, #fffc00);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #ffffff, #fffc00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.typegroundPokemonDetails {
+  background: #ffe259;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ffa751, #ffe259);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ffa751, #ffe259); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.typefightingPokemonDetails {
+  background: #ffe259;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ffa751, #ffe259);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ffa751, #ffe259); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+}
+
+.typepsychicPokemonDetails {
+  background: #CC95C0;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #7AA1D2, #DBD4B4, #CC95C0);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #7AA1D2, #DBD4B4, #CC95C0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.typerockPokemonDetails {
+  background: #77A1D3;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #E684AE, #79CBCA, #77A1D3);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #E684AE, #79CBCA, #77A1D3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.typeghostPokemonDetails {
+  background: #CC95C0;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #7AA1D2, #DBD4B4, #CC95C0);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #7AA1D2, #DBD4B4, #CC95C0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.typeice {
+  background: #77A1D3;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #E684AE, #79CBCA, #77A1D3);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #E684AE, #79CBCA, #77A1D3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.typedragonPokemonDetails {
+  background: #fceabb;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #f8b500, #fceabb);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #f8b500, #fceabb); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.typesteel {
+  background: #77A1D3;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #E684AE, #79CBCA, #77A1D3);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #E684AE, #79CBCA, #77A1D3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.typefairyPokemonDetails{
+  background: #f4c4f3;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #fc67fa, #f4c4f3);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #fc67fa, #f4c4f3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+
+.title-img-card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title-img-card h1{
+  position : absolute;
+  font-family: "PokemonSolid";
+  font-size: 30px;
+  font-weight: bold;
+  
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+
+.pokemon-types{
+  position: relative;
+  background-size: cover;
+
+}
+
+.pokemon_img_cont{
+  position: absolute;
+  margin-top: 61px;
+  margin-left: 110px;
+  width: 110px;
+  height: 150px;
+}
+
+
+  .typegrass {
+    background-image: url("./cards/grass.png");
+    transform: scale(1);
+   width: 250px;
+   height: 350px;
+   
+    
+  }
+  
+  .typepoison {
+    background-image: url("./cards/grass.png");
+    transform: scale(1);
+   width: 250px;
+   height: 350px;
+  }
+  
+  .typefire {
+    background-image: url("./cards/fire.png");
+    transform: scale(1);
+   width: 250px;
+   height: 350px;
+  }
+  
+  .typeflying {
+    background-image: url("./cards/colorless.png");
+    transform: scale(1);
+   width: 250px;
+   height: 350px;
+  }
+  
+  .typewater {
+    background-image: url("./cards/water.png");
+    transform: scale(1);
+   width: 250px;
+   height: 350px;
+  }
+  
+  .typebug {
+    background-image: url("./cards/grass.png");
+    transform: scale(1);
+   width: 250px;
+   height: 350px;
+  }
+  
+  .typenormal {
+    background-image: url("./cards/colorless.png");
+    transform: scale(1);
+   width: 250px;
+   height: 350px;
+  }
+  
+  .typeelectric {
+    background-image: url("./cards/lightning.png");
+    transform: scale(1);
+   width: 250px;
+   height: 350px;
+  }
+  
+  .typeground {
+    background-image: url("./cards/fighting.png");
+    transform: scale(1);
+   width: 250px;
+   height: 350px;
+  }
+  
+  .typefighting {
+    background-image: url("./cards/fighting.png");
+    transform: scale(1);
+   width: 250px;
+   height: 350px;
+  }
+  
+  .typepsychic {
+    background-image: url("./cards/Psychic.png");
+    transform: scale(1);
+   width: 250px;
+   height: 350px;
+  }
+  
+  .typerock {
+    background-image: url("./cards/metal.png");
+    transform: scale(1);
+   width: 250px;
+   height: 350px;
+  }
+  
+  .typeghost {
+    background-image: url("./cards/Psychic.png");
+    transform: scale(1);
+   width: 250px;
+   height: 350px;
+  }
+  
+  .typeice {
+    background-image: url("./cards/water.png");
+    transform: scale(1);
+   width: 250px;
+   height: 350px;
+  }
+  
+  .typedragon {
+    background-image: url("./cards/dragon.png");
+    transform: scale(1);
+   width: 250px;
+   height: 350px;
+  }
+  
+  .typesteel {
+    background-image: url("./cards/metal.png");
+    transform: scale(1);
+   width: 250px;
+   height: 350px;
+  }
+  .typefairy{
+    background-image: url("./cards/fairy.png");
+    transform: scale(1);
+   width: 250px;
+   height: 350px;
+  }
+
+
+  /* Image */
+.PokemonDetails .title-img-card img{
+ transform:scale(0.99) translatex(-73px) translatey(103px);
+ width:136px;
+ perspective:0px;
+}
+
+/* Span Tag */
+.title-img-card span{
+ transform:translatex(-15px) translatey(3px);
+ overflow:visible;
+}
+
+/* Pokemon details */
+.App .PokemonDetails{
+ height:319px !important;
+ min-height:319px;
+ width:987px;
+}
+
+/* Paragraph */
+.App .PokemonDetails p{
+ transform:translatex(-6px) translatey(0px);
+ position:relative;
+}
+
+/* Heading */
+.PokemonDetails .title-img-card h1{
+ left:-38px;
+ top:24px;
+ z-index:-10;
+ position:relative;
+ opacity:1;
+ pointer-events:auto;
+ align-self:auto;
+ display:block;
+ filter: saturate(0);
+ background-size:auto;
+}
+
+/* Bio */
+.App .PokemonDetails .Bio{
+ transform:translatex(0px) translatey(-24px);
+ width:356px;
+}
+
+/* Strong Tag */
+.Bio p strong{
+ position:relative;
+ right:-58px;
+}
+
+/* Paragraph */
+.PokemonDetails .Bio p{
+ transform:translatex(0px) translatey(0px);
+}
+
+/* Stats */
+.App .PokemonDetails .Stats{
+ transform:translatex(-355px) translatey(214px);
+ min-height:269px;
+ height:269px;
+}
+
+/* Strong Tag */
+.Stats p strong{
+ position:relative;
+ left:32px;
+}
+
+/* Title img card */
+.App .PokemonDetails .title-img-card{
+ transform:translatex(0px) translatey(7px);
+}
+
+.PokemonDetails .Stats p:nth-child(1){
+ left:8px;
+}
+
+/* Paragraph */
+.PokemonDetails .Stats p:nth-child(2){
+ left:9px;
+}
+
+/* Paragraph */
+.PokemonDetails .Stats p:nth-child(3){
+ top:0px;
+ left:10px;
+}
+
+/* Paragraph */
+.PokemonDetails .Stats p:nth-child(4){
+ left:10px;
+}
+
+/* Strong Tag */
+.Stats p:nth-child(1) strong{
+ left:73px;
+}
+
+/* Strong Tag */
+.Stats p:nth-child(3) strong{
+ left:1px;
+}
+
+/* Strong Tag */
+.Stats p:nth-child(2) strong{
+ left:-1px;
+}
+
+/* Strong Tag */
+.Stats p:nth-child(4) strong{
+ left:0px;
+}
+
+/* Training */
+.App .PokemonDetails .Training{
+ transform:translatex(0px) translatey(173px);
+ position:relative;
+ left:-200px;
+}
+
+/* Paragraph */
+.PokemonDetails .Training p:nth-child(1){
+ padding-right:0px;
+ left:8px;
+}
+
+/* Paragraph */
+.PokemonDetails .Bio p:nth-child(2){
+ width:202%;
+ line-height:26.8px;
+}
+
+/* Strong Tag */
+.PokemonDetails .Bio > strong:nth-child(1){
+ transform:scale(1.73);
+}
+
+/* Bio */
+.PokemonDetails .Bio .BIO{
+ height:0px;
+ width:100% !important;
+ font-size:27px;
+ text-transform:none;
+ font-weight:400;
+ color:#000000;
+}
+
+/* Paragraph */
+.PokemonDetails .Bio p:nth-child(4){
+ left:299px;
+ top:-49px;
+ min-height:46px;
+ transform:translatex(-7px) translatey(16px);
+}
+
+/* Training */
+.PokemonDetails .Training .TRAINING{
+ font-weight:400;
+ font-size:26px;
+ line-height:37px;
+ display:inline-block;
+ transform:translatex(-134px) translatey(-15px);
+ position:relative;
+ left:128px;
+}
+
+/* Stats */
+.PokemonDetails .Stats .STATS{
+ font-weight:400;
+ font-size:26px;
+ line-height:37px;
+}
+
+/* Strong Tag */
+.Stats p:nth-child(5) strong{
+ left:1px;
+}
+
+/* Paragraph */
+.PokemonDetails .Stats p:nth-child(5){
+ left:13px;
+}
+
+@media (max-width:768px){
+
+ /* Pokemon details */
+ .App .PokemonDetails{
+  transform:translatex(-103px) translatey(24px);
+ }
+ 
+}
+
+/* Body */
+body{
+  display:block;
+  visibility:visible;
+  opacity:1;
+  clear:none;
+  overflow:auto;
+  background-image:linear-gradient(62deg, rgb(142, 197, 252) 0%, rgb(224, 195, 252) 100%);
+ }
+ 
+ /* Pokemon details  container */
+ #root .App .PokemonDetails-Container{
+  height:594vh;
+  min-width:0px;
+  background-size:auto;
+  background-attachment:scroll;
+  background-clip:border-box;
+  min-height:0px;
+  max-height:87px;
+ }
+
+ /* Heading */
+.PokemonDetails .title-img-card h1{
+  color:rgb(0, 0, 0);
+  background-clip:border-box;
+  letter-spacing:1.8px;
+ }
+ 
+ 
+ /* Pokemon details */
+.App .PokemonDetails{
+  position:relative;
+  top:83px;
+ }
+ 
+ 
+ 
+ 
+ /* Pokemon details  container */
+#root .App .PokemonDetails-Container{
+  position:relative;
+  top:-37px;
+ }
+ 
+ .App .PokemonDetails{
+  min-height:454px;
+ }
+ 
+ .PokemonDetails .title-img-card img{
+  top:-68px;
+ }
+ 
+ /* Heading */
+ .PokemonDetails .title-img-card h1{
+  top:18px;
+  left:-26px;
+ }
+ 
+ /* Navigation */
+.App .navBar{
+  width:100%;
+ }
+ 
+ /* Bio */
+.PokemonDetails .Bio .BIO{
+  transform:translatex(18px) translatey(-10px) !important;
+ }
+ 
+ 

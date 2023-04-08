@@ -1,0 +1,72 @@
+@font-face {
+    font-family: "PokemonSolid";
+    src: url("./fonts/PokemonSolid.ttf") format("truetype");
+  }
+  
+  .navbar_component {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: pink;
+    height: 60px;
+    padding: 0 20px;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.8);
+  }
+  
+  .navbar-title {
+    font-family: "Pokemon";
+    margin: 0;
+    user-select: none;
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .navbar-profile {
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+  }
+  
+  .navbar-profile-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 5px;
+  }
+  
+
+  .profile-options-list {
+    position: absolute;
+    top: 50px;
+    left: -10px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.3s ease-in-out forwards;
+  }
+  li{
+    position: relative;
+    list-style: none;
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
